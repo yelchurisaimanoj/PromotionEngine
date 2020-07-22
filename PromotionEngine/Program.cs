@@ -37,7 +37,21 @@ namespace PromotionEngine
             sku.AddToSKU('B');
             sku.AddToSKU('C');
             Console.WriteLine("Scenerio - 2 : " + promo.GetOrderValue(sku));
-           
+            //reset the basket
+            sku.ResetSKU();
+
+            sku.AddToSKU('A');
+            sku.AddToSKU('A');
+            sku.AddToSKU('A');
+            sku.AddToSKU('B');
+            sku.AddToSKU('B');
+            sku.AddToSKU('B');
+            sku.AddToSKU('B');
+            sku.AddToSKU('B');
+            sku.AddToSKU('C');
+            sku.AddToSKU('D');
+            Console.WriteLine("Scenerio - 3 : " + promo.GetOrderValue(sku));
+
             Console.ReadLine();
         }
     }
