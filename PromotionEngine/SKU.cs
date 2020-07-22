@@ -16,6 +16,10 @@ namespace PromotionEngine
             this.itemByPrice = itemsByPrice;
         }
 
+        public void ResetSKU() {
+            items = new List<char>();
+        }
+
         public void AddToSKU(char item)
         {
             items.Add(item);
